@@ -4,11 +4,7 @@
 *:before {
   box-sizing: border-box;
 }
-img {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-}
+
 .container {
   position: relative;
   width: 800px;
@@ -17,6 +13,7 @@ img {
   margin: 10px auto;
   background-color: #fff;
   box-shadow: 5px 10px 18px #888888;
+  perspective: 1000px;
 }
 .nav {
   width: inherit;
@@ -48,6 +45,7 @@ img {
   background: #018bcc;
   padding: 13px 20px;
   border: none;
+  outline: none;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: -3px 3px #016da0, -5px 5px #016da0;
