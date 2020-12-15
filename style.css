@@ -48,14 +48,11 @@
   outline: none;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: -3px 3px #016da0, -5px 5px #016da0;
+  box-shadow: 5px 10px 18px #888888;
 }
 
-.btn2 {
-  box-shadow: -3px 3px rgb(160, 159, 159), -5px 5px rgb(160, 159, 159);
-}
 .btn:hover {
-  border-bottom: 4px;
+  box-shadow: none;
 }
 .buttons {
   margin-left: 50%;
@@ -251,26 +248,38 @@
   font-size: 24px;
   margin: 10px;
   font-family: "Luckiest Guy", cursive;
+  color: #50abf1;
 }
 .login input {
   height: 20px;
   width: 80%;
   padding: 1em;
   margin: 10px;
+  border: 1px solid #44a6f1;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 3px;
+}
+::placeholder {
+  color: #50abf1;
 }
 .login button {
   display: block;
   padding: 0.3em;
   margin: 10px;
   width: 80%;
-  border: 0;
   background-color: #50abf1;
   color: #fff;
-  cursor: pointer;
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 1.5em;
   font-weight: 600;
-  text-shadow: 0 1px 0 rgba(black, 0.2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+}
+.login button:hover {
+  box-shadow: none;
 }
 .modal-name {
   position: relative;
