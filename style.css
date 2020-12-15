@@ -56,6 +56,14 @@
 .buttons .btn2 {
   background-color: #ccc;
 }
+.btn-offline {
+  margin-top: 50%;
+}
+.btn-offline .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+}
 /*remove shadow when we hover*/
 .btn:hover {
   box-shadow: none;
@@ -311,7 +319,8 @@
     opacity: 1;
   }
 }
-#modalJoinGame .modal-name {
+#modalJoinGame .modal-name,
+#modalPlay .modal-name {
   height: 50%;
 }
 /* The Close Button */

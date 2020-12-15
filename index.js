@@ -13,16 +13,22 @@ function goOffline() {
 // the modal
 var modal = document.getElementById("modalEnterName");
 var modal2 = document.getElementById("modalJoinGame");
+var modal3 = document.getElementById("modalPlay");
 var btnNewGame = document.getElementById("newGame");
 var btnJoinGame = document.getElementById("JoinGame");
+var btnPlay = document.getElementById("play");
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
 
 btnNewGame.onclick = function () {
   modal.style.display = "block";
 };
 btnJoinGame.onclick = function () {
   modal2.style.display = "block";
+};
+btnPlay.onclick = function () {
+  modal3.style.display = "block";
 };
 
 span.onclick = function () {
@@ -31,11 +37,19 @@ span.onclick = function () {
 span2.onclick = function () {
   modal2.style.display = "none";
 };
+span3.onclick = function () {
+  modal3.style.display = "none";
+};
 
 window.onclick = function (event) {
-  if (event.target == modal || event.target == modal2) {
+  if (
+    event.target == modal ||
+    event.target == modal2 ||
+    event.target == modal3
+  ) {
     modal.style.display = "none";
     modal2.style.display = "none";
+    modal3.style.display = "none";
   }
 };
 //Enter name
