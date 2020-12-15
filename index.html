@@ -28,7 +28,7 @@
         <div class="side1">
           <div class="btn-online" id="online">
             <button class="btn" id="newGame">New Game</button>
-            <button class="btn">Join Game</button>
+            <button class="btn" id="JoinGame">Join Game</button>
           </div>
           <div class="btn-offline" id="offline">
             <button class="btn">Play</button>
@@ -73,9 +73,9 @@
         </div>
       </div>
     </div>
-    <!-- The Modal -->
+    <!-- The Modal NewGame-->
     <div id="modalEnterName" class="modal">
-      <!-- Modal content -->
+      <!-- Modal content for NewGame -->
       <div class="modal-name">
         <span class="close">&times;</span>
         <div class="login">
@@ -103,6 +103,31 @@
                 ></i
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal JoinGame-->
+    <div id="modalJoinGame" class="modal">
+      <!-- Modal content -->
+      <div class="modal-name">
+        <span class="close">&times;</span>
+        <div class="login">
+          <div id="name-container">
+            <label for="name">Enter your name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name.."
+            /><br /><label for="name">Enter Room ID:</label>
+            <input
+              type="text"
+              name="id"
+              id="roomID"
+              placeholder="Enter Room ID.."
+            />
+            <button onclick="sendName()">Join</button>
           </div>
         </div>
       </div>

@@ -12,22 +12,30 @@ function goOffline() {
 }
 // the modal
 var modal = document.getElementById("modalEnterName");
-
-var btn = document.getElementById("newGame");
-
+var modal2 = document.getElementById("modalJoinGame");
+var btnNewGame = document.getElementById("newGame");
+var btnJoinGame = document.getElementById("JoinGame");
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
 
-btn.onclick = function () {
+btnNewGame.onclick = function () {
   modal.style.display = "block";
+};
+btnJoinGame.onclick = function () {
+  modal2.style.display = "block";
 };
 
 span.onclick = function () {
   modal.style.display = "none";
 };
+span2.onclick = function () {
+  modal2.style.display = "none";
+};
 
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == modal || event.target == modal2) {
     modal.style.display = "none";
+    modal2.style.display = "none";
   }
 };
 //Enter name

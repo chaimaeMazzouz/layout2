@@ -283,6 +283,7 @@
 .login button:hover {
   box-shadow: none;
 }
+
 .modal-name {
   position: relative;
   background-color: #fefefe;
@@ -310,7 +311,9 @@
     opacity: 1;
   }
 }
-
+#modalJoinGame .modal-name {
+  height: 50%;
+}
 /* The Close Button */
 .close {
   color: #50abf1;
