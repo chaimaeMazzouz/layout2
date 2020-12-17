@@ -14,12 +14,15 @@ function goOffline() {
 var modal = document.getElementById("modalEnterName");
 var modal2 = document.getElementById("modalJoinGame");
 var modal3 = document.getElementById("modalPlay");
+var modal4 = document.getElementById("modalInfo");
 var btnNewGame = document.getElementById("newGame");
 var btnJoinGame = document.getElementById("JoinGame");
 var btnPlay = document.getElementById("play");
+var btnInfo = document.getElementById("Info");
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
 var span3 = document.getElementsByClassName("close")[2];
+var span4 = document.getElementsByClassName("close")[3];
 
 btnNewGame.onclick = function () {
   modal.style.display = "block";
@@ -29,6 +32,9 @@ btnJoinGame.onclick = function () {
 };
 btnPlay.onclick = function () {
   modal3.style.display = "block";
+};
+btnInfo.onclick = function () {
+  modal4.style.display = "block";
 };
 
 span.onclick = function () {
@@ -40,16 +46,21 @@ span2.onclick = function () {
 span3.onclick = function () {
   modal3.style.display = "none";
 };
+span4.onclick = function () {
+  modal4.style.display = "none";
+};
 
 window.onclick = function (event) {
   if (
     event.target == modal ||
     event.target == modal2 ||
-    event.target == modal3
+    event.target == modal3 ||
+    event.target == modal4
   ) {
     modal.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
+    modal4.style.display = "none";
   }
 };
 //Enter name

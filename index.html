@@ -14,9 +14,12 @@
   </head>
   <body>
     <div class="container">
-      <!--What you have to add from here-->
       <div class="close-icon">
         <span class="close">&times;</span>
+      </div>
+      <!--What you have to add from here-->
+      <div class="info-icon" id="Info">
+        <i class="fas fa-info-circle"></i>
       </div>
       <!--to here-->
       <header class="nav">
@@ -158,6 +161,23 @@
               placeholder="Enter second player name.."
             />
             <button onclick="sendName()">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- The Modal Info-->
+    <div class="modal" id="modalInfo">
+      <!-- Modal content for Info -->
+      <div class="modal-name">
+        <span class="close">&times;</span>
+          <div id="name-container">
+           <p>-Le jeu a 2 joueurs, jouant en tours <br>
+-À chaque tour, un joueur lance un dé autant de fois qu'il le souhaite, chaque résultat est ajouté à son score de la ronde<br>
+-mais, si le joueur obtient un 1, tout son score est perdu. après ça, c'est au tour du joueur sui<br>
+-le joueur peut choisir de `` maintenir '', ce qui signifie que son score de ronde est ajouté à son score total, après cela, c'est le tour du joueur suivant<br>
+-le premier joueur à atteindre 100 points sur le score global remporte la partie<br>
+-les joueurs vont avoir la possibilité de jouer offline et online
+</p>
           </div>
         </div>
       </div>

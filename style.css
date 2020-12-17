@@ -306,7 +306,10 @@
   background-color: white;
   color: #018bcc;
 }
-
+#modalInfo .modal-name {
+  background-color: #018bcc;
+  color: #fff;
+}
 /* Add Animation */
 
 @keyframes animatetop {
@@ -385,4 +388,12 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+/*info icon*/
+.info-icon {
+  color: #50abf1;
+  float: left;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
